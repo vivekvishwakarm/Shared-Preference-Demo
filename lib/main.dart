@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shared_pref_demo/splash_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
@@ -17,10 +18,18 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const SharedPref(),
+      home: const SplashScreen(),
     );
   }
 }
+
+
+
+
+
+
+
+
 
 class SharedPref extends StatefulWidget {
   const SharedPref({super.key});
